@@ -49,8 +49,6 @@
 
     };
 
-
-    
     default_physical_layout: default_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "LilGuy";
