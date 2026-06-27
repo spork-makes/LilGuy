@@ -1,0 +1,6 @@
+if LILGUY
+
+config ZMK_KEYBOARD_NAME
+    default "LilGuy"
+
+endif
