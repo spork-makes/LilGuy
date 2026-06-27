@@ -53,7 +53,7 @@
     
     default_physical_layout: default_physical_layout {
         compatible = "zmk,physical-layout";
-        display-name = "Lil Guy";
+        display-name = "LilGuy";
         transform = <&default_transform>;
         kscan = <&default_kscan>;
           
