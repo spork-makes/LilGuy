@@ -4,7 +4,7 @@
 
     chosen {
         zmk,kscan = &default_kscan;
-        zmk,physical-layout = physical_layout_0;
+        zmk,physical-layout = &default_physical_layout;
     };
 
     default_kscan: kscan {
@@ -48,12 +48,12 @@
         >;
 
     };
-
 };
+
     
-    physical_layout_0: physical_layout_0 {
+    default_physical_layout: default_physical_layout {
         compatible = "zmk,physical-layout";
-        display-name = "LilGuy";
+        display-name = "Lil Guy";
         transform = <&default_transform>;
         kscan = <&default_kscan>;
         keys  //                     w   h     x     y     rot    rx    ry
@@ -131,4 +131,3 @@
             , <&key_physical_attrs 100 100  1100   500       0     0     0>
             ;
     };
-
