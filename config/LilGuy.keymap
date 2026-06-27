@@ -19,6 +19,69 @@
             bindings = <&kp RSHIFT>, <&kp RSHIFT>, <&kp CAPS>;
         };
     };
+    macros {
+        mac_c: mac_c {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp N1 &kp N2 &kp N2 &kp N5 &kp ENTER>;
+            label = "MAC_C"
+        };
+
+        mac_n: mac_n {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp W>,
+                <&macro_press>,
+                <&kp LSHIFT>,
+                <&macro_tap>,
+                <&kp H>,
+                <&macro_release>,
+                <&kp LSHIFT>,
+                <&macro_tap>,
+                <&kp A &kp L &kp E &kp DOLLAR &kp N1 &kp N9 &kp N8 &kp N4>;
+            label = "MAC_N"
+        };
+
+        mac_m: mac_m {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp M>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp A &kp R &kp K &kp U &kp S &kp POUND &kp N1 &kp N2 &kp N2 &kp N5 &kp ENTER>;
+            label = "MAC_M";
+        };
+
+        mac_l: mac_l {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp M>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp A &kp R &kp K &kp U &kp S &kp POUND &kp NUMBER_1 &kp N2 &kp N2 &kp N5 &kp N6 &kp N3 &kp N7 &kp N8 &kp ENTER>;
+            label = "MAC_L";
+        };
+
+        mac_e: mac_e {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp N &kp B &kp D &kp I &kp X &kp O &kp N &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "MAC_E";
+        };
+    };
+
 
     keymap {
         compatible = "zmk,keymap";
@@ -35,15 +98,27 @@
         };
 
 
-        fn_layer {
+        fn_layer_1 {
             bindings = <
 &trans     &trans        &trans         &trans          &kp PAUSE_BREAK &kp INS        &trans       &trans      &trans       &trans     &kp HOME  &kp END
 &kp F11    &kp F1    	 &kp F2         &kp F3    	&kp F4          &kp F5         &kp F6       &kp F7      &kp F8       &kp F9     &kp F10   &kp F12
-&trans     &trans    	 &trans         &trans   	&trans          &trans         &trans       &trans      &trans       &trans     &trans    &trans  
+&studio_unlock  &trans   &trans         &trans   	&trans          &trans         &trans       &trans      &trans       &trans     &trans    &trans  
 &trans     &trans    	 &trans         &trans   	&trans          &trans         &trans       &trans      &trans       &trans     &trans    &trans  
 &trans     &trans    	 &trans         &trans   	&trans          &trans         &trans       &trans      &trans       &trans     &kp PG_UP &trans  
 &trans     &trans 	 &trans         &trans  	&kp C_VOL_DN    &kp SPACE      &kp C_VOL_UP &trans      &trans       &kp K_BACK &kp PG_DN &kp K_FORWARD   
             >;
+        };
+        
+        extra_layer_2 {
+            status = "reserved";
+        };
+        
+        extra_layer_3 {
+            status = "reserved";
+        };
+        
+         extra_layer_4 {
+            status = "reserved";
         };
     };
 };
