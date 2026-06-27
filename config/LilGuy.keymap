@@ -24,7 +24,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp N1 &kp N2 &kp N2 &kp N5 &kp ENTER>;
-            label = "MAC_C"
+            label = "MAC_C";
         };
 
         mac_n: mac_n {
@@ -41,7 +41,7 @@
                 <&kp LSHIFT>,
                 <&macro_tap>,
                 <&kp A &kp L &kp E &kp DOLLAR &kp N1 &kp N9 &kp N8 &kp N4>;
-            label = "MAC_N"
+            label = "MAC_N"; 
         };
 
         mac_m: mac_m {
